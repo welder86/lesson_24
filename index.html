@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson_24</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <header class="header">
+            <div class="container">
+                <h1 class="header__title">JS</h1>
+            </div>
+        </header>
+        <main class="page">
+
+
+            <section class="lessons-1">
+                <div class="lessons__container">
+
+                    <div class="lessons__image">
+                        <img src="images/js-1.png" alt="">
+                    </div>
+                    <div class="lessons__content">
+                        <h2 class="lessons__title">Відео 1</h2>
+                        <div class="lessons__text">
+                            <p>
+                                1) Першим консоль виведе Коля!
+                            </p>
+
+                            <p>
+                                2) так, все вірно
+                            </p>
+
+                            <p>
+                                3) неправильно, оскільки браузер не розуміє що саме містить змінна
+                            </p>
+
+                            <p>
+                                4) "use strict";<br>
+
+                                let showMessage;<br>
+                                
+                                if (2 > 1) {<br> 
+
+                                    showMessage = function () {<br>
+                                        <br>
+                                        console.log('Сообщение');<br>
+                                    }<br>
+                                    <br>
+                                }<br>
+                                showMessage();
+                            </p>
+
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="lessons-2">
+                <div class="lessons__container">
+
+                    <div class="lessons__image">
+                        <img src="images/js-2.png" alt="">
+                    </div>
+                    <div class="lessons__content">
+                        <h2 class="lessons__title">Відео 2</h2>
+                        <div class="lessons__text">
+                            <p>
+                                1) Довжина масива = 4
+                            </p>
+
+                            <p>
+                                2) const users = ["Ваня", "Іштван"];<br>
+                                <br>
+                                users.push("Оля");<br>
+                                <br>
+                                let index = users.indexOf("Іштван");<br>
+                                <br>
+                                users.splice(users.indexOf("Іштван"), 1, "Петя")<br>
+                                <br>
+                                let firstElement = users.shift()<br>
+                                <br>
+                                console.log(firstElement);<br>
+                                <br>
+                                users.splice(0, 0, "Вася", "Паша");<br>
+                                <br>
+                                console.log(users);<br>
+                                
+                            </p>
+
+                            <p>
+                                3) let arr = ['Ваня', 'Иштван', 'Оля',];<br>
+                                <br>
+                                let indexOfElement = arr.indexOf("Иштван");<br>
+                                <br>
+                                let removedElement = arr.splice(indexOfElement, 1)<br>
+                                <br>
+                                console.log(removedElement);<br>
+                            </p>
+
+                            <p>
+                                4) let str = 'Ваня,Иштван,Оля';<br>
+                                <br>
+                                let array = str.split(",")<br>
+                                <br>
+                                console.log(array);
+                            </p>
+
+                            <p>
+                                5) дорівнює 9.
+                                
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+
+        <footer class="footer">
+        </footer>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
